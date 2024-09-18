@@ -18,6 +18,12 @@ const Navbar = () => {
               About Us
             </a>
           </li>
+          <li>
+            <a href="/contact-us" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
+              Contact Us
+            </a>
+          </li>
+
         </ul>
       </div>
       <i className="fa fa-bars text-white text-2xl cursor-pointer"></i>
