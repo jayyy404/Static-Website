@@ -1,7 +1,8 @@
 import React from 'react';
+import image1 from './pictures/latte.jpg';
 
 const products = [
-  { src: './pictures/latte.jpg', name: 'LATTE', price: '₱140.00' },
+  { src: image1, name: 'LATTE', price: '₱140.00' },
   { src: './pictures/americano.jpg', name: 'AMERICANO', price: '₱145.00' },
   { src: './pictures/machiatto.jpg', name: 'MACHIATTO', price: '₱120.00' },
   { src: './pictures/flatwhite.jpg', name: 'FLAT-WHITE', price: '₱115.00' },

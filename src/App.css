@@ -36,3 +36,71 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* App.css */
+
+/* About Us Section */
+.about-us-section {
+  @apply py-10 text-center;
+}
+
+/* Section Title */
+.section-title {
+  @apply text-4xl font-bold text-blue-700;
+}
+
+/* Section Subtitle */
+.section-subtitle {
+  @apply mt-2 text-gray-500;
+}
+
+/* Team Grid Layout */
+.team-grid {
+  @apply mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto; /* Maintains the original layout */
+}
+
+/* Second Row Grid */
+.second-row {
+  @apply col-span-full grid grid-cols-1 md:grid-cols-3 gap-4 justify-center; /* Adjusted to 3 columns */
+}
+
+
+
+
+/* Team Member Container */
+.team-member {
+  @apply text-center;
+  margin-bottom: 1rem;
+}
+
+/* Team Member Image */
+.team-member-image {
+  @apply w-32 h-32 mx-auto rounded-full overflow-hidden;
+}
+
+/* Image Styling */
+.image-style {
+  @apply object-cover w-full h-full;
+}
+
+/* Team Member Name */
+.member-name {
+  @apply mt-4 text-xl font-semibold;
+}
+
+/* Team Member Role */
+.member-role {
+  @apply text-blue-600 font-light;
+}
+
+/* Social Icons Container */
+.social-icons {
+  @apply mt-4 flex justify-center space-x-4;
+}
+
+/* Social Icon Links */
+.social-link {
+  @apply text-gray-400 hover:text-gray-600;
+}
