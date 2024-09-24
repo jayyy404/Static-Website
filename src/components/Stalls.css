@@ -1,0 +1,182 @@
+/* Container for the stalls */
+.stall-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2.5rem;
+    min-height: 10vh;
+    background-color: #f3f4f6;
+  }
+  
+  /* Each stall box */
+  .stall-box {
+    background-color: #ffffff;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    width: 16rem; /* Fixed width */
+    height: 18rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 2s ease;
+    transition: scale 0.6s ease;
+  }
+  
+  .stall-box:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    scale: 1.08;
+  }
+  
+  /* Image container with 3:4 aspect ratio */
+  .stall-image {
+    position: relative;
+    height: 80%;
+    /* padding-bottom: 133.33%; 3:4 aspect ratio */
+    overflow: hidden;
+  }
+  
+  .stall-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+  }
+  
+  /* Stall name */
+  .stall-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.75rem;
+  }
+  
+  /* Modal container */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    /* transition: backdrop-filter 3.5s ease; */
+}
+
+/* Modal content */
+/* Modal content layout */
+.modal-content {
+    display: flex;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    /* max-width: 100%; */
+    width: 85%;
+    position: relative;
+    height: 85%; /* This keeps it responsive */
+    overflow: hidden;
+}
+
+/* Modal image with 16:9 aspect ratio */
+.modal-image {
+    /* position:sticky; */
+    width: 65%;
+    height: 100%;
+    /* padding-bottom: 56.25%; 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+.modal-image img {
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text content side of modal */
+.modal-text {
+    width: 50%;
+    padding-left: 2.5rem;
+    overflow-y: auto;
+  }
+  
+  .modal-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  .modal-description {
+    margin-top: 0.5rem;
+    max-height: 100%;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-right: 1rem;
+    font-style: bold;
+}
+
+.modal-close:hover {
+    color: rgb(188, 188, 188);
+    text-shadow: #333;
+}
+  
+/* Minimalist circular nav button styling */
+.modal-nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke; /* Circle border */
+    border-radius: 50%; /* Makes the button circular */
+    width: 3rem; /* Equal width and height for perfect circle */
+    height: 3rem;
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s;
+}
+  
+.modal-nav-button.prev {
+    left: 2%;
+}
+  
+.modal-nav-button.next {
+    right: 2%;
+}
+  
+.modal-nav-button:hover {
+    background-color: #555; /* Light background on hover */
+    color: whitesmoke; /* Darker text color on hover */
+    border-color: #555; /* Slightly darker border on hover */
+}
