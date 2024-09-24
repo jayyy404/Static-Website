@@ -25,8 +25,8 @@ const ContactUs = () => {
 
         <div className="contact-box">
           <i className="fas fa-clock"></i>
-          <h3>Operating Hourse</h3>
-          <p> Monday to Saturder <br /> 6AM - 6PM</p>
+          <h3>Operating Hours</h3>
+          <p> Monday to Saturday <br /> 6AM - 6PM</p>
         </div>
 
         <div className="contact-box">
