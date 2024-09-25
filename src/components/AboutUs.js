@@ -44,27 +44,20 @@ const teamMembers = [
 const AboutUs = () => {
   return (
     <section className="about-us-section">
-      {/* Section Title */}
       <h2 className="section-title">Meet the Team</h2>
       <p className="section-subtitle">
         Get to know the creative minds behind our work!
       </p>
 
-      {/* Team Grid */}
       <div className="team-grid">
-        {/* First Row: 3 images */}
         {teamMembers.slice(0, 3).map((member, index) => (
           <div key={index} className="team-member">
-            {/* Team Member Image */}
             <div className="team-member-image">
               <img src={member.image} alt={member.name} className="image-style" />
             </div>
 
-            {/* Name and Role */}
             <h3 className="member-name">{member.name}</h3>
             <p className="member-role">{member.role}</p>
-
-            {/* Social Icons */}
             <div className="social-icons">
               <a href="#" className="social-link">
                 <i className="fab fa-facebook"></i>
@@ -79,20 +72,17 @@ const AboutUs = () => {
           </div>
         ))}
 
-         {/* Second Row: 3 images */}
+
          <div className="second-row">
           {teamMembers.slice(3, 6).map((member, index) => (
             <div key={index + 3} className="team-member">
-              {/* Team Member Image */}
               <div className="team-member-image">
                 <img src={member.image} alt={member.name} className="image-style" />
               </div>
 
-              {/* Name and Role */}
               <h3 className="member-name">{member.name}</h3>
               <p className="member-role">{member.role}</p>
 
-              {/* Social Icons */}
               <div className="social-icons">
                 <a href="#" className="social-link">
                   <i className="fab fa-facebook"></i>
