@@ -6,6 +6,8 @@ import AboutUs from './components/AboutUs';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
+import ContactUs from './components/ContactUs';  
+import Stalls from './components/Stalls';
 import './index.css'; 
 
 function App() {
@@ -19,8 +21,10 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Header />} />
-
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/Stalls*" element={<Stalls />} />
+
       </Routes>
 
       {location.pathname === "/" && <Menu />}
