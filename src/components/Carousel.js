@@ -28,6 +28,7 @@ const Carousel = () => {
   };
 
   return (
+    <section className = "bg-white py=40">
     <div className="carousel-container">
       <div className="carousel">
         {duplicatedMenuItems.map((item, index) => (
@@ -40,6 +41,7 @@ const Carousel = () => {
         ))}
       </div>
     </div>
+  </section>
   );
 };
 

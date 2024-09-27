@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './pictures/logo.png';
+import logo from './pictures/coop.jpg';
 import '../App.css'; 
 import { Link } from 'react-router-dom';
 
@@ -17,6 +17,11 @@ const Navbar = () => {
             </a>
           </li>
           <li>
+            <a href="/stalls" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
+              STALLS
+            </a>
+          </li>
+          <li>
             <a href="/about-us" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
               ABOUT US
             </a>
@@ -24,11 +29,6 @@ const Navbar = () => {
           <li>
             <a href="/contact-us" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
               CONTACT US
-            </a>
-          </li>
-          <li>
-            <a href="/Stalls" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
-              STALLS
             </a>
           </li>
         </ul>

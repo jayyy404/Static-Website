@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: 'John Paul Sapasap',
-    role: 'Backend Developer',
+    role: 'Developer',
     image: image2,
   },
   {

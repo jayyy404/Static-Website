@@ -3,9 +3,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2.5rem;
+    padding: 10rem;
     min-height: 10vh;
     background-color: #f3f4f6;
+    min-height: 100vh;
   }
   
   /* Each stall box */
@@ -180,3 +181,4 @@
     color: whitesmoke; /* Darker text color on hover */
     border-color: #555; /* Slightly darker border on hover */
 }
+
