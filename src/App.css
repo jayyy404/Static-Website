@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #202020;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,7 @@
 
 .about-us-section {
   @apply py-10 text-center;
+  padding-top: 50px;
 }
 
 
