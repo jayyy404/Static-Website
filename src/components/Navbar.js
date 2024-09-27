@@ -12,22 +12,22 @@ const Navbar = () => {
       <div className="flex-1 text-right"> 
         <ul className="flex space-x-4 justify-end"> 
           <li>
-            <a href="/" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
+            <a href="/" className="text-white text-lg hover:bg-white hover:text-blue-700 px-3 py-2 rounded">
               HOME
             </a>
           </li>
           <li>
-            <a href="/stalls" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
+            <a href="/stalls" className="text-white text-lg hover:bg-white hover:text-blue-700 px-3 py-2 rounded">
               STALLS
             </a>
           </li>
           <li>
-            <a href="/about-us" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
+            <a href="/about-us" className="text-white text-lg hover:bg-white hover:text-blue-700 px-3 py-2 rounded">
               ABOUT US
             </a>
           </li>
           <li>
-            <a href="/contact-us" className="text-white text-lg hover:bg-white hover:text-black px-3 py-2 rounded">
+            <a href="/contact-us" className="text-white text-lg hover:bg-white hover:text-blue-700 px-3 py-2 rounded">
               CONTACT US
             </a>
           </li>
