@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/Navbar'; 
 import AboutUs from './components/AboutUs';
 import Header from './components/Header';
-import Menu from './components/Menu';
 import Footer from './components/Footer';
 import ContactUs from './components/ContactUs';  
 import Stalls from './components/Stalls';
+import Carousel from './components/Carousel';
 import './index.css'; 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
 
       </Routes>
 
-      {location.pathname === "/" && <Menu />}
+      {location.pathname === "/" && <Carousel />}
 
    <Footer/>
     </div>
