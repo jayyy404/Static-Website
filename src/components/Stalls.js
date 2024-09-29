@@ -1,5 +1,20 @@
 import React, { useState } from 'react';
 import './Stalls.css'; // Import the CSS file
+import milktea from './pictures/stalls/Ilovemilktea.jpg';
+import zencafe from './pictures/stalls/zencafe.jpg';
+import pinkwall from './pictures/stalls/pinkwall.jpg'; 
+import greenwall from './pictures/stalls/greenwall.jpg';
+import chickbrew from './pictures/stalls/chickbrew.jpg';
+import greenkiosk from './pictures/stalls/greenkiosk.jpg';
+import dinette from './pictures/stalls/dinette.jpg';
+import mushin from './pictures/stalls/mushin.jpg';
+import kiosk1 from './pictures/stalls/kiosk1.jpg';
+import kiosk2 from './pictures/stalls/kiosk2.jpg';
+import kiosk3 from './pictures/stalls/kiosk3.jpg';
+import kiosk4 from './pictures/stalls/kiosk4.jpg';
+import kiosk5 from './pictures/stalls/kiosk5.jpg';
+import kiosk678 from './pictures/stalls/kiosk678.jpg';
+import kiosk9 from './pictures/stalls/kiosk9.jpg';
 
 const stalls = [
   {
@@ -8,7 +23,7 @@ const stalls = [
     price_range: '₱20 - ₱60',
     description: 'A delightful stop for milktea enthusiasts and snack lovers alike, IloveMilktea Store offers a variety of savory snacks and refreshing drinks. Enjoy their classic siopao and crispy lumpiang shanghai paired with a perfectly brewed wintermelon or taro milktea',
     location: '2nd Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: milktea, // Placeholder image
   },
   {
     id: 2,
@@ -16,7 +31,7 @@ const stalls = [
     price_range: '₱20 - ₱55',
     description: 'This cozy café provides a warm atmosphere with its pink-themed decor. The menu features comforting snacks like toast with butter, ensaymada, and delicious cookies, alongside rich brewed and iced coffee options to fuel your day.',
     location: '2nd Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: pinkwall, // Placeholder image
   },
   {
     id: 3,
@@ -24,7 +39,7 @@ const stalls = [
     price_range: '₱20 - ₱50',
     description: 'Known for its casual vibe, this store serves up tasty bites that are perfect for a quick snack. Indulge in cheese sticks and nachos, or enjoy a classic hotdog on a stick while sipping on a refreshing mango shake or halo-halo.',
     location: '2nd Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: greenwall, // Placeholder image
   },
   {
     id: 4,
@@ -32,7 +47,7 @@ const stalls = [
     price_range: '₱20 - ₱55',
     description: "Zen's Cafe is all about comfort food and quality beverages. With items like the ube cheese pandesal and hearty tuna sandwich, you can satisfy your cravings. Their coffee selection is a must-try for anyone needing a caffeine fix.",
     location: '2nd Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: zencafe, // Placeholder image
   },
   {
     id: 5,
@@ -40,7 +55,7 @@ const stalls = [
     price_range: '₱30 - ₱55',
     description: ' Specializing in chicken dishes, Chickbrew is perfect for fried chicken fans. From chicken fillet sandwiches to crunchy wings and nuggets, there’s something for everyone. Pair your meal with their flavorful iced coffee for a complete experience.',
     location: '2nd Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: chickbrew, // Placeholder image
   },
   {
     id: 6,
@@ -48,7 +63,7 @@ const stalls = [
     price_range: '₱35 - ₱70',
     description: 'For those craving Japanese flavors, Mushin Japanese Cafe serves an array of authentic dishes, including takoyaki and chicken ramen. Their gyoza and tempura provide a delightful taste of Japan, complemented by refreshing iced coffee or a matcha latte.',
     location: '2nd Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: mushin, // Placeholder image
   },
   {
     id: 7,
@@ -56,7 +71,7 @@ const stalls = [
     price_range: '₱15 - ₱50',
     description: 'A vibrant stop for value lovers, Green Kiosk offers enticing buy-one-take-one deals on burgers, hotdogs, and nachos. Enjoy hearty meals like chicken BBQ and pancit canton, perfect for sharing or satisfying your hunger solo.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: greenkiosk, // Placeholder image
   },
   {
     id: 8,
@@ -64,7 +79,7 @@ const stalls = [
     price_range: '₱25 - ₱50',
     description: 'Dinette, etc provides a casual dining experience with its selection of burgers and snacks. Their burger with fries is a favorite, while the chicken nuggets combo offers a satisfying option for those craving comfort food.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: dinette, // Placeholder image
   },
   {
     id: 9,
@@ -72,7 +87,7 @@ const stalls = [
     price_range: '₱20 - ₱55',
     description: 'This kiosk specializes in delicious waffles and French toast. Whether you prefer plain or hotdog waffles, Kiosk 1 has a sweet or savory option for everyone. Pair your treat with a hot chocolate or iced coffee for a delightful snack break.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk1, // Placeholder image
   },
   {
     id: 10,
@@ -80,7 +95,7 @@ const stalls = [
     price_range: '₱40 - ₱55',
     description: 'Kiosk 2 serves traditional Filipino dishes, including pork adobo and chicken curry. Each meal is prepared with authentic flavors, providing a taste of home in every bite. Perfect for those seeking hearty, familiar meals.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk2, // Placeholder image
   },
   {
     id: 11,
@@ -88,7 +103,7 @@ const stalls = [
     price_range: '₱45 - ₱55',
     description: 'Known for its comfort meals, Kiosk 3 offers fried chicken, lumpia, and classic Filipino favorites like pork sinigang and chicken inasal. Each dish promises to warm your heart and satisfy your taste buds.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk3, // Placeholder image
   },
   {
     id: 12,
@@ -96,7 +111,7 @@ const stalls = [
     price_range: '₱40 - ₱50',
     description: 'Kiosk 4 presents a selection of beloved Filipino comfort food, including pork sisig and chicken adobo. With delicious home-cooked flavors, this kiosk is a must-visit for fans of traditional meals.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk4, // Placeholder image
   },
   {
     id: 13,
@@ -104,7 +119,7 @@ const stalls = [
     price_range: '₱40 - ₱55',
     description: "Offering a customizable experience, Kiosk 5 allows you to pick your carenderia meal, which includes rice, one meat, and one veggie. This flexibility, along with favorites like chicken afritada, ensures there's something for everyone.",
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk5, // Placeholder image
   },
   {
     id: 14,
@@ -112,7 +127,7 @@ const stalls = [
     price_range: '₱60 - ₱75',
     description: 'For those looking for a more filling meal, these kiosks provide hearty options like pork BBQ and beef caldereta. Each dish is generously portioned, making it an ideal choice for a substantial lunch or dinner.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk678, // Placeholder image
   },
   {
     id: 15,
@@ -120,7 +135,7 @@ const stalls = [
     price_range: '₱30 - ₱35',
     description: 'Another great waffle destination, Kiosk 9 serves up a variety of waffle options with delicious toppings like cheese and yema. Perfect for a light snack or a sweet treat to brighten your day.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk9, // Placeholder image
   },
   {
     id: 16,
