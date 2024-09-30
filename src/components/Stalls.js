@@ -15,6 +15,9 @@ import kiosk4 from './pictures/stalls/kiosk4.jpg';
 import kiosk5 from './pictures/stalls/kiosk5.jpg';
 import kiosk678 from './pictures/stalls/kiosk678.jpg';
 import kiosk9 from './pictures/stalls/kiosk9.jpg';
+import kiosk10 from './pictures/stalls/kiosk10.jpg';
+import kiosk11 from './pictures/stalls/kiosk11.jpg';
+import kiosk12 from './pictures/stalls/kiosk12.jpg';
 
 const stalls = [
   {
@@ -143,7 +146,7 @@ const stalls = [
     price_range: '₱20 - ₱55',
     description: 'Kiosk 10 is a go-to spot for classic Filipino street food. Enjoy favorites like isaw, betamax, and kikiam, or try their refreshing buko juice and melon shake for a satisfying snack break.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk10, // Placeholder image
   },
   {
     id: 17,
@@ -151,7 +154,7 @@ const stalls = [
     price_range: '₱20 - ₱55',
     description: 'Kiosk 11 offers a variety of Filipino snacks and drinks, including fish balls, kwek-kwek, and refreshing gulaman. Their selection of street food favorites is perfect for those looking to enjoy classic flavors on the go.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk11, // Placeholder image
   },
   {
     id: 18,
@@ -159,7 +162,7 @@ const stalls = [
     price_range: '₱20 - ₱60',
     description: 'This kiosk is a haven for snack lovers, offering a selection of sweet treats like puto and kutsinta. For a refreshing drink, try their ube matcha lemonade or bubble teas, perfect for cooling off on warm days.',
     location: '1st Floor',
-    image: 'https://via.placeholder.com/400x300', // Placeholder image
+    image: kiosk12, // Placeholder image
   },
 ];
 
