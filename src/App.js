@@ -28,6 +28,7 @@ function App() {
       </Routes>
 
       {location.pathname === "/" && <Carousel />}
+      
 
    <Footer/>
     </div>

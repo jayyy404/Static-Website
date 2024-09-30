@@ -7,7 +7,7 @@
 .carousel {
   display: flex;
   white-space: nowrap;
-  animation: scroll 15s linear infinite; /* Infinite scrolling */
+  animation: scroll 59s linear infinite; /* Infinite scrolling */
 }
 
 .carousel-item-image {
@@ -31,6 +31,6 @@
     transform: translateX(0); /* Start at the beginning */
   }
   100% {
-    transform: translateX(-50%); /* Scroll halfway through the items */
+    transform: translateX(-1000%); /* Scroll halfway through the items */
   }
 }
